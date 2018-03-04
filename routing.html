@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Desarrollo web</title>
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+    <div id="header">
+      <h1>Introducción de Vue.js</h1>
+      <img src="images/vue.svg" alt="Logo de Vue" width="50">
+    </div>
+    <div id="nav">
+      <h2>Menu de navegación</h2>
+      <ul class="options menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="what.html">Qué es Vue.js?</a></li>
+        <li><a href="data.html">Datos y métodos</a></li>
+        <li><a href="syntax.html">Sintaxis</a></li>
+        <li><a href="components.html">Componentes</a></li>
+        <li><a href="routing.html" class="active">Enrutamiento</a></li>
+        <li><a href="class.html">Clase y estilo</a></li>
+        <li><a href="conditional.html">Condicional</a></li>
+        <li><a href="events.html">Eventos</a></li>
+        <li><a href="loop.html">Bucles</a></li>
+      </ul>
+    </div>
+    <div id="content">
+      <h2>Enrutamiento</h2>
+      <p>Para la mayoría de las aplicaciones de una sola página, se recomienda utilizar la biblioteca vue-router oficialmente admitida.</p>
+      <p>Si solo necesita un enrutamiento muy simple y no desea involucrar una biblioteca de enrutadores con todas las funciones, puede hacerlo procesando dinámicamente un componente de nivel de página como este:</p>
+      <pre>
+
+  const NotFound = { template: '&lt;p&gt;Page not found&lt;/p&gt;' }
+  const Home = { template: '&lt;p&gt;home page&lt;/p&gt;' }
+  const About = { template: '&lt;p&gt;about page&lt;/p&gt;' }
+
+  const routes = {
+    '/': Home,
+    '/about': About
+  }
+
+  new Vue({
+    el: '#app',
+    data: {
+      currentRoute: window.location.pathname
+    },
+    computed: {
+      ViewComponent () {
+        return routes[this.currentRoute] || NotFound
+      }
+    },
+    render (h) { return h(this.ViewComponent) }
+  })
+      </pre>
+    </div>
+    <div id="aside">
+      <span>Fuente: <a href="https://vuejs.org/v2/guide/routing.html">Routing</a></span>
+    </div>
+    <div id="footer">
+      <p>Universidad de Córdoba</p>
+      <p>Facultad de Ingeniería</p>
+      <p>Programa de Ingeniería de Sistemas</p>
+      <p>Montería - Córdoba</p>
+      <p>© 2018</p>
+    </div>
+  </body>
+</html>

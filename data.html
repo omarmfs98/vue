@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Desarrollo web</title>
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+    <div id="header">
+      <h1>Introducción de Vue.js</h1>
+      <img src="images/vue.svg" alt="Logo de Vue" width="50">
+    </div>
+    <div id="nav">
+      <h2>Menu de navegación</h2>
+      <ul class="options menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="what.html">Qué es Vue.js?</a></li>
+        <li><a href="data.html" class="active">Datos y métodos</a></li>
+        <li><a href="syntax.html">Sintaxis</a></li>
+        <li><a href="components.html">Componentes</a></li>
+        <li><a href="routing.html">Enrutamiento</a></li>
+        <li><a href="class.html">Clase y estilo</a></li>
+        <li><a href="conditional.html">Condicional</a></li>
+        <li><a href="events.html">Eventos</a></li>
+        <li><a href="loop.html">Bucles</a></li>
+      </ul>
+    </div>
+    <div id="content">
+      <h2>Datos y métodos</h2>
+      <span>Cuando se crea una instancia de Vue, agrega todas las propiedades encontradas en su objeto <code class="tag-code">data</code> al sistema de reactividad de Vue. Cuando los valores de esas propiedades cambian, la vista "reaccionará" y se actualizará para que coincida con los nuevos valores.</span>
+      <pre>
+
+  // Nuestro objeto de datos
+  var data = { a : 1 }
+
+  // El objeto se agrega a una instancia de Vue
+  var vm = new Vue ({
+    data: data
+  })
+
+  // Obtener la propiedad en la instancia
+  // devuelve la de los datos originales
+  vm.a == data.a // => true
+
+  // Establecer la propiedad en la instancia
+  // también afecta a los datos originales
+  vm.a = 2
+  data.a // => 2
+
+  // ... y viceversa
+  data.a = 3
+  vm.a // => 3
+      </pre>
+    </div>
+    <div id="aside">
+      <span>Fuente: <a href="https://vuejs.org/v2/guide/instance.html#Data-and-Methods">Data and Methods</a></span>
+    </div>
+    <div id="footer">
+      <p>Universidad de Córdoba</p>
+      <p>Facultad de Ingeniería</p>
+      <p>Programa de Ingeniería de Sistemas</p>
+      <p>Montería - Córdoba</p>
+      <p>© 2018</p>
+    </div>
+  </body>
+</html>

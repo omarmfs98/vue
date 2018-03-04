@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Desarrollo web</title>
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+    <div id="header">
+      <h1>Introducción de Vue.js</h1>
+      <img src="images/vue.svg" alt="Logo de Vue" width="50">
+    </div>
+    <div id="nav">
+      <h2>Menu de navegación</h2>
+      <ul class="options menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="what.html" class="active">Qué es Vue.js?</a></li>
+        <li><a href="data.html">Datos y métodos</a></li>
+        <li><a href="syntax.html">Sintaxis</a></li>
+        <li><a href="components.html">Componentes</a></li>
+        <li><a href="routing.html">Enrutamiento</a></li>
+        <li><a href="class.html">Clase y estilo</a></li>
+        <li><a href="conditional.html">Condicional</a></li>
+        <li><a href="events.html">Eventos</a></li>
+        <li><a href="loop.html">Bucles</a></li>
+      </ul>
+    </div>
+    <div id="content">
+      <h2>Qué es Vue.js?</h2>
+      <span>Vue es un marco progresivo para construir interfaces de usuario. A diferencia de otros marcos monolíticos, Vue está diseñado desde cero para ser adoptable incrementalmente. La biblioteca central se centra solo en la capa de visualización y es fácil de seleccionar e integrar con otras bibliotecas o proyectos existentes. Por otro lado, Vue también es perfectamente capaz de impulsar sofisticadas aplicaciones de una sola página cuando se utiliza en combinación con herramientas modernas y bibliotecas de soporte.</span>
+      <h3>Representación declarativa</h3>
+      <span>En el núcleo de Vue.js se encuentra un sistema que nos permite representar de forma declarativa los datos en el DOM mediante una sintaxis de plantilla sencilla:</span>
+      <pre>
+
+  &lt;div id=&quot;app&quot;&gt;
+    {{ message }}
+  &lt;/div&gt;
+      </pre>
+      <pre>
+
+  var app = new Vue({
+    el: '#app',
+    data: {
+      message: 'Hello Vue!'
+    }
+  })
+      </pre>
+    </div>
+    <div id="aside">
+      <span>Fuente: <a href="https://vuejs.org/v2/guide/index.html">What is Vue.js?</a></span>
+    </div>
+    <div id="footer">
+      <p>Universidad de Córdoba</p>
+      <p>Facultad de Ingeniería</p>
+      <p>Programa de Ingeniería de Sistemas</p>
+      <p>Montería - Córdoba</p>
+      <p>© 2018</p>
+    </div>
+  </body>
+</html>

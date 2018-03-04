@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Desarrollo web</title>
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+    <div id="header">
+      <h1>Introducción de Vue.js</h1>
+      <img src="images/vue.svg" alt="Logo de Vue" width="50">
+    </div>
+    <div id="nav">
+      <h2>Menu de navegación</h2>
+      <ul class="options menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="what.html">Qué es Vue.js?</a></li>
+        <li><a href="data.html">Datos y métodos</a></li>
+        <li><a href="syntax.html">Sintaxis</a></li>
+        <li><a href="components.html">Componentes</a></li>
+        <li><a href="routing.html">Enrutamiento</a></li>
+        <li><a href="class.html" class="active">Clase y estilo</a></li>
+        <li><a href="conditional.html">Condicional</a></li>
+        <li><a href="events.html">Eventos</a></li>
+        <li><a href="loop.html">Bucles</a></li>
+      </ul>
+    </div>
+    <div id="content">
+      <h2>Clase y estilo</h2>
+      <p>Una necesidad común de enlace de datos es manipular la lista de clases de un elemento y sus estilos en línea. Dado que ambos son atributos, podemos usarlos <code class="tag-code">v-bind</code> para manejarlos: solo necesitamos calcular una cadena final con nuestras expresiones. Sin embargo, interferir con la concatenación de cadenas es molesto y propenso a errores. Por esta razón, Vue proporciona mejoras especiales cuando <code class="tag-code">v-bind</code> se usa con <code class="tag-code">class</code> y <code class="tag-code">style</code>. Además de las cadenas, las expresiones también pueden evaluar objetos o matrices.</p>
+      <pre>
+
+  &lt;div v-bind:class=&quot;{ active: isActive }&quot;&gt;&lt;/div&gt;
+      </pre>
+    </div>
+    <div id="aside">
+      <span>Fuente: <a href="https://vuejs.org/v2/guide/class-and-style.html">Class and Style Bindings</a></span>
+    </div>
+    <div id="footer">
+      <p>Universidad de Córdoba</p>
+      <p>Facultad de Ingeniería</p>
+      <p>Programa de Ingeniería de Sistemas</p>
+      <p>Montería - Córdoba</p>
+      <p>© 2018</p>
+    </div>
+  </body>
+</html>

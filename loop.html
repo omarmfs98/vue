@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Desarrollo web</title>
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+    <div id="header">
+      <h1>Introducción de Vue.js</h1>
+      <img src="images/vue.svg" alt="Logo de Vue" width="50">
+    </div>
+    <div id="nav">
+      <h2>Menu de navegación</h2>
+      <ul class="options menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="what.html">Qué es Vue.js?</a></li>
+        <li><a href="data.html">Datos y métodos</a></li>
+        <li><a href="syntax.html">Sintaxis</a></li>
+        <li><a href="components.html">Componentes</a></li>
+        <li><a href="routing.html">Enrutamiento</a></li>
+        <li><a href="class.html">Clase y estilo</a></li>
+        <li><a href="conditional.html">Condicional</a></li>
+        <li><a href="events.html">Eventos</a></li>
+        <li><a href="loop.html" class="active">Bucles</a></li>
+      </ul>
+    </div>
+    <div id="content">
+      <h2>Bucles</h2>
+      <p>Podemos usar la directiva <code class="tag-code">v-for</code> para generar una lista de elementos basada en una matriz. La directiva <code class="tag-code">v-for</code> requiere una sintaxis especial en forma de <code class="tag-code">item in items</code>, donde <code class="tag-code">items</code> es la matriz de datos de origen y <code class="tag-code">item</code> es un alias para el elemento de la matriz que se itera:</p>
+      <pre>
+
+  &lt;ul id=&quot;example-1&quot;&gt;
+    &lt;li v-for=&quot;item in items&quot;&gt;
+      {{ item.message }}
+    &lt;/li&gt;
+  &lt;/ul&gt;
+      </pre>
+      <pre>
+
+  var example1 = new Vue({
+    el: '#example-1',
+    data: {
+      items: [
+        { message: 'Foo' },
+        { message: 'Bar' }
+      ]
+    }
+  })
+      </pre>
+    </div>
+    <div id="aside">
+      <span>Fuente: <a href="https://vuejs.org/v2/guide/list.html">List Rendering</a></span>
+    </div>
+    <div id="footer">
+      <p>Universidad de Córdoba</p>
+      <p>Facultad de Ingeniería</p>
+      <p>Programa de Ingeniería de Sistemas</p>
+      <p>Montería - Córdoba</p>
+      <p>© 2018</p>
+    </div>
+  </body>
+</html>

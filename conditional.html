@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Desarrollo web</title>
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+    <div id="header">
+      <h1>Introducción de Vue.js</h1>
+      <img src="images/vue.svg" alt="Logo de Vue" width="50">
+    </div>
+    <div id="nav">
+      <h2>Menu de navegación</h2>
+      <ul class="options menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="what.html">Qué es Vue.js?</a></li>
+        <li><a href="data.html">Datos y métodos</a></li>
+        <li><a href="syntax.html">Sintaxis</a></li>
+        <li><a href="components.html">Componentes</a></li>
+        <li><a href="routing.html">Enrutamiento</a></li>
+        <li><a href="class.html">Clase y estilo</a></li>
+        <li><a href="conditional.html" class="active">Condicional</a></li>
+        <li><a href="events.html">Eventos</a></li>
+        <li><a href="loop.html">Bucles</a></li>
+      </ul>
+    </div>
+    <div id="content">
+      <h2>Condicional</h2>
+      <p>En plantillas de cadenas, por ejemplo, Manubrios, escribiríamos un bloque condicional como este:</p>
+      <pre>
+
+  &lt;!-- Handlebars template --&gt;
+  {{#if ok}}
+    &lt;h1&gt;Yes&lt;/h1&gt;
+  {{/if}}
+      </pre>
+      <p>En Vue, usamos la directiva <code class="tag-code">v-if</code> para lograr lo mismo:</p>
+      <pre>
+
+  &lt;h1 v-if=&quot;ok&quot;&gt;Yes&lt;/h1&gt;
+      </pre>
+      <p>También es posible agregar un "bloque sino" con <code class="tag-code">v-else</code>:</p>
+      <pre>
+
+  &lt;h1 v-if=&quot;ok&quot;&gt;Yes&lt;/h1&gt;
+  &lt;h1 v-else&gt;No&lt;/h1&gt;
+      </pre>
+    </div>
+    <div id="aside">
+      <span>Fuente: <a href="https://vuejs.org/v2/guide/conditional.html">Conditional Rendering</a></span>
+    </div>
+    <div id="footer">
+      <p>Universidad de Córdoba</p>
+      <p>Facultad de Ingeniería</p>
+      <p>Programa de Ingeniería de Sistemas</p>
+      <p>Montería - Córdoba</p>
+      <p>© 2018</p>
+    </div>
+  </body>
+</html>

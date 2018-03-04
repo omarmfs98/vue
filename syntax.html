@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Desarrollo web</title>
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+    <div id="header">
+      <h1>Introducción de Vue.js</h1>
+      <img src="images/vue.svg" alt="Logo de Vue" width="50">
+    </div>
+    <div id="nav">
+      <h2>Menu de navegación</h2>
+      <ul class="options menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="what.html">Qué es Vue.js?</a></li>
+        <li><a href="data.html">Datos y métodos</a></li>
+        <li><a href="syntax.html" class="active">Sintaxis</a></li>
+        <li><a href="components.html">Componentes</a></li>
+        <li><a href="routing.html">Enrutamiento</a></li>
+        <li><a href="class.html">Clase y estilo</a></li>
+        <li><a href="conditional.html">Condicional</a></li>
+        <li><a href="events.html">Eventos</a></li>
+        <li><a href="loop.html">Bucles</a></li>
+      </ul>
+    </div>
+    <div id="content">
+      <h2>Sintaxis</h2>
+      <p>Vue.js utiliza una sintaxis de plantilla basada en HTML que le permite vincular de forma declarativa el DOM renderizado con los datos de la instancia Vue subyacente. Todas las plantillas de Vue.js son HTML válidos que pueden ser analizados por navegadores compatibles con especificaciones y analizadores de HTML.</p>
+      <p>Debajo del capó, Vue compila las plantillas en funciones de representación de DOM virtuales. Combinado con el sistema de reactividad, Vue es capaz de determinar de manera inteligente el número mínimo de componentes para volver a procesar y aplicar la cantidad mínima de manipulaciones de DOM cuando cambia el estado de la aplicación.</p>
+      <pre>
+
+  // atributos
+  &lt;div v-bind:id=&quot;dynamicId&quot;&gt;&lt;/div&gt;
+
+  &lt;button v-bind:disabled=&quot;isButtonDisabled&quot;&gt;Button&lt;/button&gt;
+
+  // texto
+  &lt;span&gt;Message: {{ msg }}&lt;/span&gt;
+
+  // expresiones de JavaScript
+  {{ number + 1 }}
+
+  {{ ok ? 'YES' : 'NO' }}
+
+  {{ message.split('').reverse().join('') }}
+
+  &lt;div v-bind:id=&quot;'list-' + id&quot;&gt;&lt;/div&gt;
+      </pre>
+    </div>
+    <div id="aside">
+      <span>Fuente: <a href="https://vuejs.org/v2/guide/syntax.html">Template Syntax</a></span>
+    </div>
+    <div id="footer">
+      <p>Universidad de Córdoba</p>
+      <p>Facultad de Ingeniería</p>
+      <p>Programa de Ingeniería de Sistemas</p>
+      <p>Montería - Córdoba</p>
+      <p>© 2018</p>
+    </div>
+  </body>
+</html>
